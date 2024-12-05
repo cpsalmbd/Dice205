@@ -1,0 +1,85 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+
+.cursored{
+    cursor: pointer;
+}
+
+.hoverable{
+    transition: 0.2s;
+}
+
+.hoverable:hover{
+    opacity: 0.5;
+    background: rgb(235, 234, 234) !important;
+}
+
+#wall::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+
+#userList::-webkit-scrollbar{
+    width: 0.3em;
+    background: transparent;
+}
+
+#userList::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 10px;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+    background-position: center center;
+}
+
+@media only screen and (max-width: 678px) {
+    .card-img-top {
+        width: 100%;
+        height: 50vw;
+        object-fit: cover;
+        background-position: center center;
+    }
+}
+
+
+#profileBackgroundImage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20em;
+    background: black;
+    opacity: .7;
+}
+
+#profileBackgroundImage::after {
+    z-index: 1;
+}
+#profileBackgroundImage > * {
+    z-index: 100;
+}
+
+#profileBackgroundImage{
+    height: 20em;
+    margin: -1.1em;
+    background-image: url(https://random.imagecdn.app/500/150);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
